@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Baum Family Maker Space</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header-placeholder"></header>
+
+    <main class="container">
+      <div class="profile-card">
+        <h2>Your Profile</h2>
+        <div class="profile-details">
+          <p>
+            <strong>Name:</strong>
+            <span id="profile-name"></span>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <span id="profile-email"></span>
+          </p>
+          <p>
+            <strong>Major:</strong>
+            <span id="profile-major"></span>
+          </p>
+          <p>
+            <strong>Year:</strong>
+            <span id="profile-year"></span>
+          </p>
+          <p>
+            <strong>Trainings:</strong>
+            <span id="profile-trainings"></span>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="data.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+      // Run this script after the page loads
+      document.addEventListener("DOMContentLoaded", () => {
+        // Use the 'fakeUser' variable from data.js
+        document.getElementById("profile-name").textContent =
+          `${fakeUser.firstName} ${fakeUser.lastName}`;
+        document.getElementById("profile-email").textContent = fakeUser.email;
+        document.getElementById("profile-major").textContent = fakeUser.major;
+        document.getElementById("profile-year").textContent = fakeUser.year;
+        document.getElementById("profile-trainings").textContent =
+          fakeUser.trainings.join(", ");
+      });
+    </script>
+  </body>
+</html>
