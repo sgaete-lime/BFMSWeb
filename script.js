@@ -1,28 +1,28 @@
-// This is script.js
+// script.js
 
-// Run this function when the web page finishes loading
+//run function when the page finishes loading
 document.addEventListener("DOMContentLoaded", () => {
   loadHeader();
 });
 
 function loadHeader() {
-  // Find the placeholder element
+  //find placeholder element
   const headerPlaceholder = document.getElementById("header-placeholder");
-  if (!headerPlaceholder) return; // Don't run if no placeholder
+  if (!headerPlaceholder) return; //don't run if no placeholder
 
-  // Fetch the header HTML
+  //fetch header HTML
   fetch("_header.html")
     .then((response) => {
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        throw new Error("Network response was not OK");
       }
       return response.text();
     })
     .then((data) => {
-      // Inject the header HTML into the placeholder
+      //inject the header html into the placeholder
       headerPlaceholder.innerHTML = data;
 
-      // After loading, update the user's name
+      //after loading update the user's name
       updateUserName();
     })
     .catch((error) => {
@@ -32,10 +32,10 @@ function loadHeader() {
 }
 
 function updateUserName() {
-  // Find the name element inside the loaded header
+  //find the name element inside the loaded header
   const userNameElement = document.getElementById("user-nav-name");
 
-  // Get the name from localStorage
+  //get the name from localStorage
   const userName = localStorage.getItem("userName");
 
   if (userName && userNameElement) {

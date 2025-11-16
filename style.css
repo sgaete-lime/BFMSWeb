@@ -12,7 +12,6 @@
   font-style: normal;
 }
 
-/* Global Styles & Variables */
 :root {
   --usc-maroon: #990000;
   --usc-gold: #ffcc00;
@@ -34,7 +33,7 @@ a {
   color: var(--usc-maroon);
 }
 
-/* --- Reusable Header --- */
+/* reusable header */
 .app-header {
   display: flex;
   justify-content: space-between;
@@ -45,8 +44,8 @@ a {
 }
 
 .header-logo img {
-  height: 100px; /* Adjust this height as needed */
-  display: block; /* Removes any extra space below the image */
+  height: 100px; /* adjust this height */
+  display: block; /* removes extra space below the image */
 }
 
 .header-logo {
@@ -61,14 +60,14 @@ a {
   cursor: pointer;
 }
 
-/* --- Main Content Container --- */
+/* main content container */
 .container {
   max-width: 1000px;
   margin: 2rem auto;
   padding: 1rem;
 }
 
-/* --- Login Page Styles --- */
+/* login page styles */
 .login-container {
   max-width: 400px;
   margin: 5rem auto;
@@ -98,7 +97,7 @@ a {
 .form-group input {
   width: 100%;
   padding: 0.75rem;
-  box-sizing: border-box; /* Important for padding to work nicely */
+  box-sizing: border-box; /* important for padding to work */
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }
@@ -121,7 +120,7 @@ a {
   opacity: 0.9;
 }
 
-/* --- Portal Page Styles --- */
+/* portal page styles */
 .portal-header {
   text-align: center;
   margin-bottom: 2rem;
@@ -147,14 +146,14 @@ a {
   min-height: 150px;
 }
 
-/* Style portal buttons */
+/* style portal buttons */
 .portal-btn {
   display: block;
   padding: 1rem 1.5rem;
   background-color: var(--usc-maroon);
   color: var(--text-light);
   border-radius: 5px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -164,7 +163,7 @@ a {
   margin: 0;
 }
 
-/* --- Profile Page Styles --- */
+/* profile page styles */
 .profile-card {
   padding: 2rem;
   background: var(--text-light);

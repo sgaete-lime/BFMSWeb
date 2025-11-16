@@ -22,16 +22,20 @@
             <span id="profile-email"></span>
           </p>
           <p>
-            <strong>Major:</strong>
+            <strong>School:</strong>
             <span id="profile-major"></span>
           </p>
           <p>
-            <strong>Year:</strong>
+            <strong>Graduating:</strong>
             <span id="profile-year"></span>
           </p>
           <p>
             <strong>Trainings:</strong>
             <span id="profile-trainings"></span>
+          </p>
+          <p>
+            <strong>Status:</strong>
+            <span id="profile-status"></span>
           </p>
         </div>
       </div>
@@ -42,9 +46,9 @@
     <script src="script.js"></script>
 
     <script>
-      // Run this script after the page loads
+      //run script after the page loads
       document.addEventListener("DOMContentLoaded", () => {
-        // Use the 'fakeUser' variable from data.js
+        //use the fakeUser var from data.js
         document.getElementById("profile-name").textContent =
           `${fakeUser.firstName} ${fakeUser.lastName}`;
         document.getElementById("profile-email").textContent = fakeUser.email;
